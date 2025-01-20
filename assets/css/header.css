@@ -1,0 +1,119 @@
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #63ff77;
+    box-shadow: 0 0 2px #000;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65.27%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-container, .nav-mobile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+.logo i {
+    color: #fff;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 15px;
+}
+
+.menu ul li a {
+    color: #000;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu ul li a::after {
+    content: ' ';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transition: all .4s ease-in-out;
+    bottom: 0;
+    left: 0;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+}
+
+.header-mobile-container {
+    display: none;
+    align-items: center;
+    background-color: #63ff77;
+    box-shadow: 0 0 2px #000;
+    justify-content: space-around;
+    padding: 0 10px;
+    height: 60px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    transition: height .5s ease-in-out;
+}
+
+ul.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+button.open-menu {
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #63ff77;
+    border-top: 0;
+    border-left: 0;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.opened {
+    height: 300px;
+}
+
+button.menu-link {
+    width: 150px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background-color: #63ff77;
+}
+
+button.menu-link:hover, button.open-menu:hover {
+    background-color: #56df68;
+}
