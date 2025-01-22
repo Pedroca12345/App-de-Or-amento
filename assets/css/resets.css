@@ -10,6 +10,11 @@
     "wdth" 100;
 }
 
+body {
+    margin-top: 100px;
+    background-color: #dfdfdf;
+}
+
 main {
     margin: 0 auto;
     width: 65.27%;
@@ -23,7 +28,12 @@ a {
     text-decoration: none;
 }
 
-button {
+button, select {
     cursor: pointer;
     border: none;
+    outline: none;
+}
+
+input {
+    outline: none;
 }

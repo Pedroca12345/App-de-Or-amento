@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/resets.css">
+    <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/media-queries.css">
 </head>
 
@@ -89,6 +90,92 @@
     <main>
 
         <div class="main-container">
+
+            <div class="form-container">
+
+                <div class="form-img">
+                    <img src="assets/imgs/undraw_savings_uwjn.svg" alt="Porquinho">
+                </div>
+
+                <div class="form">
+
+                    <form action="">
+
+                        <div class="inputs-container">
+
+                            <div class="row first">
+
+                                <div class="month-select">
+                                    <label for="month">Mês</label>
+                                    <select name="month" id="month">
+
+                                        <option value="">Selecione um mês:</option>
+                                        <option value="jan">Janeiro</option>
+                                        <option value="feb">Fevereiro</option>
+                                        <option value="mar">Março</option>
+                                        <option value="apr">Abril</option>
+                                        <option value="may">Maio</option>
+                                        <option value="jun">Junho</option>
+                                        <option value="jul">Julho</option>
+                                        <option value="aug">Agosto</option>
+                                        <option value="sep">Setembro</option>
+                                        <option value="oct">Outubro</option>
+                                        <option value="nov">Novembro</option>
+                                        <option value="dec">Dezembro</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="wage-input">
+                                    <label for="wage">Salário:</label>
+                                    <input type="number" id="wage" name="wage" min="0" placeholder="R$ 999.99">
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="type-select">
+                                    <label for="type">Gasto</label>
+                                    <select name="type" id="type">
+
+                                        <option value="">Selecione um tipo de gasto</option>
+                                        <option value="expense">Despesa</option>
+                                        <option value="leisure">Lazer</option>
+                                        <option value="entertainment">Entretenimento</option>
+                                        <option value="emergency">Emergência</option>
+                                        <option value="clothes">Roupas</option>
+                                        <option value="others">Outros</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="value-input">
+                                    <label for="value">Valor:</label>
+                                    <input type="number" id="value" name="value" min="0" placeholder="R$ 999.99">
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="description-input">
+                                    <label for="description">Descrição</label>
+                                    <textarea name="description" id="description" maxlength="300"></textarea>
+                                </div>
+
+                                
+                            </div>
+
+                            <button type="submit" class="btn-register">Cadastrar</button>
+                            
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
 
         </div>
 

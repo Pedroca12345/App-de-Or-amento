@@ -1,0 +1,92 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #636363;
+}
+
+.form-img {
+    border-right: #000000 3px solid;
+    width: 50%;
+    height: 100%;
+}
+
+.form-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    height: 100%;
+    width: 50%;
+    padding: 15px;
+}
+
+.form form {
+    height: 100%;
+    width: 100%;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.month-select,
+.wage-input,
+.type-select,
+.value-input,
+.description-input {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-wrap: nowrap;
+}
+
+.description-input {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.month-select select,
+.wage-input input,
+.type-select select,
+.value-input input,
+.description-input textarea {
+    border-radius: 5px;
+    font-size: 18px;
+    border: #63ff77 2px solid;
+    height: 50px;
+}
+
+.description-input textarea {
+    outline: none;
+    resize: none;
+    height: 100%;
+}
+
+button.btn-register {
+    background-color: #63ff77;
+    border-radius: 5px;
+    height: 200px;
+}
+
+button.btn-register:hover {
+    background-color: #56df68;
+}

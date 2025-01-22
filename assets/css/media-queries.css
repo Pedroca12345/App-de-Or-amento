@@ -14,7 +14,13 @@
 }
 
 @media (max-width: 992px) {
-    
+    .form-img {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1200px) {
