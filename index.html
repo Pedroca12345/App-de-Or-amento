@@ -99,7 +99,7 @@
 
                 <div class="form">
 
-                    <form action="">
+                    <form action="/" id="register-form">
 
                         <div class="inputs-container">
 
@@ -107,7 +107,7 @@
 
                                 <div class="month-select">
                                     <label for="month">Mês</label>
-                                    <select name="month" id="month">
+                                    <select name="month" id="month" class="input-to-validate">
 
                                         <option value="">Selecione um mês:</option>
                                         <option value="jan">Janeiro</option>
@@ -124,11 +124,13 @@
                                         <option value="dec">Dezembro</option>
 
                                     </select>
+                                    <span class="error">Selecione uma opção!</span>
                                 </div>
 
                                 <div class="wage-input">
                                     <label for="wage">Salário:</label>
-                                    <input type="number" id="wage" name="wage" min="0" placeholder="R$ 999.99">
+                                    <input type="number" id="wage" name="wage" class="input-to-validate" min="0" placeholder="R$ 999.99">
+                                    <span class="error">Insira um valor!</span>
                                 </div>
 
                             </div>
@@ -137,7 +139,7 @@
 
                                 <div class="type-select">
                                     <label for="type">Gasto</label>
-                                    <select name="type" id="type">
+                                    <select name="type" id="type" class="input-to-validate">
 
                                         <option value="">Selecione um tipo de gasto</option>
                                         <option value="expense">Despesa</option>
@@ -148,11 +150,13 @@
                                         <option value="others">Outros</option>
 
                                     </select>
+                                    <span class="error">Selecione uma opção!</span>
                                 </div>
 
                                 <div class="value-input">
                                     <label for="value">Valor:</label>
-                                    <input type="number" id="value" name="value" min="0" placeholder="R$ 999.99">
+                                    <input type="number" id="value" class="input-to-validate" name="value" min="0" placeholder="R$ 999.99">
+                                    <span class="error">Insira um valor!</span>
                                 </div>
 
                             </div>

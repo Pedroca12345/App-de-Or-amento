@@ -90,3 +90,13 @@ button.btn-register {
 button.btn-register:hover {
     background-color: #56df68;
 }
+
+.error {
+    font-size: 12px;
+    color: #ff2727;
+    display: none;
+}
+
+.active-error {
+    display: flex;
+}
