@@ -3,12 +3,17 @@ class Form {
         this.form = document.getElementById('register-form');
         this.validateForm();
         this.inputs = this.form.querySelectorAll('.input-to-validate');
+        this.expenses = [];
     }
 
     validateForm() {
         this.form.addEventListener('submit', event => {
-            this.handleSubmit(event);
             this.verifyInputs();
+            this.handleSubmit(event);
+            this.inputsStorage();
+            if (this.verifyInputs()) {
+                this.inputsClear();
+            }
         });
     }
 
@@ -32,12 +37,24 @@ class Form {
 
     handleSubmit(event) {
         event.preventDefault();
+    }
 
-        if (this.verifyInputs()) {
-            this.form.submit();
-            this.inputsClear();
+    inputsStorage () {
+        if(this.verifyInputs()) {
+            this.expenses.push({
+                month: this.form.querySelector('#month').value,
+                wage : Number(this.form.querySelector('#wage').value),
+                type: this.form.querySelector('#type').value,
+                value: Number(this.form.querySelector('#value').value), 
+                description: this.form.querySelector('#description').value
+            });
+
+            const expensesJSON = JSON.stringify(this.expenses);
+            localStorage.setItem('expenses', expensesJSON);
+            console.log(localStorage.getItem('expenses'));
         }
     }
+
 }
 
 const registerForm = new Form();

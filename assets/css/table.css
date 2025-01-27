@@ -1,0 +1,35 @@
+.table-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #636363;
+}
+
+.expenses-table {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.expenses-table table {
+    width: 100%;
+    border: 1px solid #b6b6b6;
+}
+
+.expenses-table td {
+    border: 2px solid #63ff77;
+}
+
+button.expenses-clear {
+    background-color: #63ff77;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+button.expenses-clear:hover {
+    background-color: #56df68;
+}
